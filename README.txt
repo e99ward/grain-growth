@@ -1,0 +1,17 @@
+# grain-growth
+
+Calculate grain growth behavior based on Ostwald ripening eqaution.
+
+Normal Grain Growth (NGG)
+
+ (n): dr/dt = A/r (1/r_c - 1/r) (1 + beta_L r/r_c)
+
+Abnormal Grain Growth (AGG)
+
+ (a): 2-dimensional nucleation: dr/dt = B exp( - C / (1/r_c - 1/r))
+ 
+ (s): screw-dislocation assisted: dr/dt = D/r (1/r_c - 1/r)^2
+ 
+ -> mixed control (abnormal): dr/dt = (1/n + 1/a)^-1
+
+[Ref.] Y.-I. Jung, D.Y. Yoon, S.-J.L. Kang, J. Mater. Res., 24[9] (2009) 2949-2959.
