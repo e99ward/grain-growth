@@ -38,7 +38,7 @@ class Worker(QThread):
         self.graingrowth.LoadGrain(self.t_from)
         self.graingrowth.CalcControl(self.temp, self.stfe, self.liqv, self.ctsv, self.mode1, self.mode2)
         cts = self.t_from
-        t_step = min(self.t_step1, self.t_step2)
+        # t_step = min(self.t_step1, self.t_step2)
         while self.working:
             if cts > self.t_to:
                 break
